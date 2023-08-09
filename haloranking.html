@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamenerd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #1b1a22;
+            color: #dbdbdb;
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-justify: auto;
+            font-size: 26px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .descricao {
+            box-shadow: inset 0 0 20px #000;
+            text-align: center;
+            padding: 30px;
+            padding-top: 100px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-justify: auto;
+            height: 150px;
+            font-size: 64px;
+            background-image: url("images/halo-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .tier-background {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-justify: auto;
+            height: 1500px;
+            font-size: 64px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: inset 0 0 60px #000000;
+        }
+
+        .footer {
+            background-color: #1b1a22;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            text-justify: auto;
+            font-size: 12px;
+        }
+
+        .background {
+            padding-top: 100px;
+            height: 1300px;
+            background-color: #0f0f0f;
+            box-shadow: inset 0 0 40px #000;
+        }
+
+        .flip-card {
+            width: 350px;
+            height: 420px;
+            perspective: 1000px;
+            border-radius: 20px;
+            position: absolute;
+            top: 0;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+            border-radius: 23px;
+        }
+
+        .flip-card-back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+            box-shadow: inset 0 0 20px #000000;
+            border-radius: 20px;
+        }
+
+        .back-video {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            height: 1500px;
+            width: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+
+        }
+    </style>
+</head>
+
+<header>
+
+    <div class="home" style="width: fit-content; margin: 0 auto;">
+        <a href="home.html" style="text-decoration: none;">
+            <h1 style="margin: 0%; margin-right: 0px; color: #dbdbdb;"><i class="fa-solid fa-gamepad"
+                    style="color: #dbdbdb;"></i>GameNerd</h1>
+        </a>
+    </div>
+</header>
+
+<body>
+    <div class="descricao">
+        <h1 style="color:#dbdbdb; position: relative; margin: 0px; text-shadow: 5px  5px  #1b1a22;">HALO: OS MELHORES E
+            PIORES</h1>
+    </div>
+
+
+    <div class="tier-background">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/tier1-background.mp4" type="video/mp4">
+        </video>
+        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-shadow: 5px  5px  #1b1a22;
+            padding-left: 600px; color : #ffffff; margin: 0; top: 0; position: absolute; margin-top: 400px;">TIER S
+        </h1>
+
+
+
+        <div class="flip-card" style="margin-left: 100px; margin-top: 600px;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images\halocombat-card.jpg" alt="Avatar"
+                        style="max-height:100%; max-width:100%; border-radius: 20px; ">
+                </div>
+
+                <div class="flip-card-back"
+                    style="font-size: 18px; background-image: url('images/halocombat-card-back.jpg'); text-shadow: 2px 2px 3px #000; font-family: Gill Sans, sans-serif;">
+                    <div style="margin: 20px;">
+                        <h1 style="font-size: 32px;">Halo: Combat Evolved</h1>
+                        <p>O jogo que deu início à franquia, seguindo o Master Chief em sua batalha contra os Covenant
+                            em um anel alienígena.</p>
+                        <p>Pontos Positivos: Introduziu a franquia com uma campanha cativante e inovações multiplayer,
+                            como o sistema de regeneração de saúde.</p>
+                        <p>Pontos Negativos: Os visuais envelheceram ao longo do tempo, missões de veículos podem ser
+                            repetitivas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="flip-card" style="margin-left: 700px; margin-top: 900px;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images\halo2-card.jpg" alt="Avatar"
+                        style="max-height:100%; max-width:100%; border-radius: 20px; ">
+                </div>
+
+                <div class="flip-card-back"
+                    style="font-size: 18px; background-image: url('images/halo2-card-back.jpg'); text-shadow: 2px 2px 3px #000; font-family: Gill Sans, sans-serif;">
+                    <div style="margin: 20px;">
+                        <h1 style="font-size: 32px;">Halo 2</h1>
+                        <p>Continuando a história do primeiro jogo, com Master Chief e novos personagens envolvidos em
+                            uma trama mais intrincada.</p>
+                        <p>Pontos Positivos: Continuação da história com uma narrativa envolvente, introdução do
+                            multiplayer online Xbox Live, e jogabilidade aprimorada.</p>
+                        <p>Pontos Negativos: Final abrupto, algumas partes da história podem ser confusas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="flip-card" style="margin-left: 200px; margin-top: 1300px;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images\halo3-card.jpg" alt="Avatar"
+                        style="max-height:100%; max-width:100%; border-radius: 20px; ">
+                </div>
+
+                <div class="flip-card-back"
+                    style="font-size: 18px; background-image: url('images/halo3-card-back.jpg'); text-shadow: 2px 2px 3px #000; font-family: Gill Sans, sans-serif;">
+                    <div style="margin: 20px;">
+                        <h1 style="font-size: 32px;">Halo 3</h1>
+                        <p>Conclusão da trilogia original, trazendo uma batalha final épica entre humanos, Covenant e
+                            Flood.</p>
+                        <p>Pontos Positivos: Encerramento da trilogia original com uma campanha épica, variedade de
+                            armas e veículos, multiplayer equilibrado.</p>
+                        <p>Pontos Negativos: Gráficos não tão impressionantes na época, curva de aprendizado íngreme
+                            para o modo Forge.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="background">
+    </div>
+
+
+
+</body>
+
+<div class="footer">
+    <p style="color: #fff;">Feito por:</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="text-decoration: underline #fff">
+        <p style="color: #fff;">Emanuele Dornelles | Lucas José | Jhonatan Ribeiro</p>
+    </a>
+</div>
+
+</html>
