@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamenerd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1b1a22;
+            color: #dbdbdb;
+            text-align: center;
+            height: 60px;
+            padding: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-justify: auto;
+            font-size: 26px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .descricao {
+            box-shadow: inset 0 0 20px #000;
+            text-align: center;
+            padding: 30px;
+            padding-top: 100px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-justify: auto;
+            height: 150px;
+            font-size: 64px;
+
+            background-image: url("images/steam-image.jpg");
+        }
+
+        .footer {
+            background-color: #1b1a22;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            text-justify: auto;
+            font-size: 12px;
+        }
+
+        .game-container {
+            display: table;
+            width: 100%;
+            justify-content: center;
+            padding: 0px;
+        }
+
+        .game-card-left {
+            opacity: 0;
+            transform: translate3d(-70px, 0, 0);
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            width: 30%;
+            margin-left: 10%;
+            padding: 20px;
+            min-height: 100%;
+            height: 650px;
+            color: #fff;
+        }
+
+        .game-card-right {
+            opacity: 0;
+            transform: translate3d(70px, 0, 0);
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            width: 30%;
+            margin-left: 60%;
+            padding: 20px;
+            min-height: 100%;
+            height: 650px;
+            color: #fff;
+        }
+
+        .backcsgo {
+            opacity: 0.8;
+            transition: 0.2s all ease-in-out;
+            background-image: url("images/csgo-image.jpg");
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .backdota {
+            opacity: 0.8;
+            transition: 0.2s all ease-in-out;
+            background-image: url("images/dota-image.jpg");
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .backpubg {
+            opacity: 0.8;
+            transition: 0.2s all ease-in-out;
+            background-image: url("images/pubg-image.jpg");
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .backamong {
+            opacity: 0.8;
+            transition: 0.2s all ease-in-out;
+            background-image: url("images/among-image.jpg");
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+
+        .backgta {
+            opacity: 0.88;
+            transition: 0.2s all ease-in-out;
+            background-image: url("images/gta-image.jpg");
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .backcsgo:hover {
+            opacity: 1;
+            box-shadow: inset 0 0 100px #000;
+            z-index: 999;
+            transform: scale(1.01);
+
+            .game-card-left {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .backdota:hover {
+            opacity: 1;
+            box-shadow: inset 0 0 100px #000;
+            z-index: 999;
+            transform: scale(1.01);
+
+            .game-card-right {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .backpubg:hover {
+            opacity: 1;
+            box-shadow: inset 0 0 100px #000;
+            z-index: 999;
+            transform: scale(1.01);
+
+            .game-card-left {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+
+            }
+        }
+
+        .backamong:hover {
+            opacity: 1;
+            box-shadow: inset 0 0 100px #000;
+            z-index: 999;
+            transform: scale(1.01);
+
+            .game-card-right {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .backgta:hover {
+            opacity: 1;
+            box-shadow: inset 0 0 200px #000;
+            z-index: 999;
+
+            .game-card-left {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+
+            }
+        }
+    </style>
+</head>
+<header>
+
+    <div class="home" style="width: fit-content; margin: 0 auto;">
+        <a href="index.html" style="text-decoration: none;">
+            <h1 style="margin: 0%; margin-right: 0px; color: #dbdbdb;"><i class="fa-solid fa-gamepad"
+                    style="color: #dbdbdb;"></i>GameNerd</h1>
+        </a>
+
+    </div>
+
+</header>
+
+<body>
+    <div class="descricao">
+        <h1 style="color:#dbdbdb; position: relative; margin: 0px; text-shadow: 5px  5px  #1b1a22;">MAIS JOGADOS DA
+            STEAM</h1>
+    </div>
+
+    <div class="game-container">
+        <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=portuguese" target="_blank"
+            style="text-decoration: none;">
+            <div class="backcsgo">
+                <div class="game-card-left" style="text-shadow: 2px 2px 3px #000;">
+                    <img src="images/csgo-icon.png" alt="icone csgo"
+                        style="width: 40%; height: auto; margin-left: 180px;">
+                    <p>Counter-Strike: Global Offensive (CS:GO) é um icônico jogo de tiro em primeira pessoa
+                        multiplayer. Os
+                        jogadores se dividem em equipes de terroristas e contra-terroristas, competindo em modos de jogo
+                        emocionantes.</p>
+                    <h2>Pontos Positivos:</h2>
+                    <ul>
+                        <li>Jogabilidade estratégica e tática.</li>
+                        <li>Ênfase na habilidade individual e precisão de tiro.</li>
+                        <li>Cena competitiva forte e torneios profissionais.</li>
+                        <li>Personalização de configurações e visuais.</li>
+                        <li>Comunidade ativa de jogadores.</li>
+                    </ul>
+
+                    <h2>Pontos Negativos:</h2>
+                    <ul>
+                        <li>Comportamento tóxico e antiesportivo dos jogadores.</li>
+                        <li>Curva de aprendizado íngreme para novos jogadores.</li>
+                        <li>Problemas de trapaças e hacks.</li>
+                        <li>Variação na qualidade das partidas.</li>
+                        <li>Questões relacionadas a conteúdo, como skins de armas e caixas de loot.</li>
+                    </ul>
+                </div>
+        </a>
+    </div>
+    <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank" style="text-decoration: none;">
+        <div class="backdota">
+            <div class="game-card-right" style="text-shadow: 2px 2px 3px #000;">
+                <img src="images/dota-icon.png" alt="icone dota" style="width: 30%; height: auto; margin-left: 180px;">
+                <p>Dota 2 é um renomado jogo de estratégia e batalha em arena (MOBA) desenvolvido pela Valve. Os
+                    jogadores
+                    formam equipes e lutam para destruir o Ancião inimigo em um ambiente altamente competitivo.</p>
+                <h2>Pontos Positivos:</h2>
+                <ul>
+                    <li>Estratégia complexa e diversificada.</li>
+                    <li>Ênfase no trabalho em equipe e comunicação.</li>
+                    <li>Atualizações frequentes e desenvolvimento contínuo.</li>
+                    <li>Cena competitiva robusta e torneios de prestígio.</li>
+                    <li>Modelo gratuito para jogar com monetização de itens cosméticos.</li>
+                </ul>
+
+                <h2>Pontos Negativos:</h2>
+                <ul>
+                    <li>Curva de aprendizado acentuada e complexidade.</li>
+                    <li>Possibilidade de comportamento tóxico por parte dos jogadores.</li>
+                    <li>Partidas frequentemente longas e demoradas.</li>
+                    <li>Dependência da cooperação da equipe.</li>
+                    <li>Requisitos de hardware mais exigentes podem limitar o acesso.</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+    <a href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/" target="_blank"
+        style="text-decoration: none;">
+        <div class="backpubg">
+            <div class="game-card-left" style="text-shadow: 2px 2px 3px #000;">
+                <img src="images/pubg-icon.jpg" alt="icone pubg" style="width: 40%; height: auto; margin-left: 180px;">
+                <p>PlayerUnknown's Battlegrounds (PUBG) é um pioneiro no gênero battle royale. Os jogadores caem em uma
+                    ilha, coletam recursos e lutam para ser o último sobrevivente em uma experiência intensa de combate.
+                </p>
+                <h2>Pontos Positivos:</h2>
+                <ul>
+                    <li>Batalhas intensas e emocionantes.</li>
+                    <li>Variedade de armas, equipamentos e veículos.</li>
+                    <li>Mapas vastos e exploratórios.</li>
+                    <li>Modo de equipe promovendo a cooperação.</li>
+                    <li>Desenvolvimento contínuo com atualizações.</li>
+                </ul>
+
+                <h2>Pontos Negativos:</h2>
+                <ul>
+                    <li>Problemas de otimização e desempenho em algumas plataformas.</li>
+                    <li>Presença de trapaças e hacks.</li>
+                    <li>Curva de aprendizado íngreme.</li>
+                    <li>Possibilidade de comportamento tóxico na comunidade.</li>
+                    <li>Questões relacionadas a eventos especiais e monetização.</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+    <a href="https://store.steampowered.com/app/945360/Among_Us/" target="_blank" style="text-decoration: none;">
+        <div class="backamong">
+            <div class="game-card-right" style="text-shadow: 2px 2px 3px #000;">
+                <img src="images\among-icon.png" alt="icone among"
+                    style="width: 60%; height: auto; margin-left: 160px;">
+                <p>Among Us é um divertido jogo de dedução social em que os jogadores assumem papéis de tripulantes e
+                    impostores em uma espaçonave. Os tripulantes trabalham para completar tarefas enquanto tentam
+                    identificar os impostores.</p>
+                <h2>Pontos Positivos:</h2>
+                <ul>
+                    <li>Jogabilidade social e divertida, incentivando a interação entre jogadores.</li>
+                    <li>Fácil de jogar, com regras simples e mecânicas acessíveis.</li>
+                    <li>Requer comunicação e estratégia para deduzir ou enganar outros jogadores.</li>
+                    <li>Personalização dos personagens com skins e chapéus.</li>
+                    <li>Jogabilidade multiplataforma para jogadores de diferentes dispositivos.</li>
+                </ul>
+
+                <h2>Pontos Negativos:</h2>
+                <ul>
+                    <li>Mais divertido com um grupo conhecido de jogadores.</li>
+                    <li>Possibilidade de toxicidade e comportamento antiesportivo.</li>
+                    <li>Limitado a partidas online, sem experiência para um jogador.</li>
+                    <li>Pode se tornar repetitivo após várias partidas.</li>
+                    <li>Risco de trapaças ou estratégias injustas por parte de alguns jogadores.</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+    <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/?l=portuguese" target="_blank"
+        style="text-decoration: none;">
+        <div class="backgta">
+            <div class="game-card-left" style="height: 790px; text-shadow: 2px 2px 3px #000;">
+                <img src="images/gta-icon.png" alt="icone csgo"
+                    style="width: 40%; height: auto; margin-left: 180px; margin-top: 15px;">
+
+                <p>Grand Theft Auto V (GTA V) é um título famoso da série de jogos de mundo aberto. Ele oferece um vasto
+                    mundo para explorar, repleto de atividades, missões e oportunidades de causar o caos.</p>
+                <h2>Pontos Positivos:</h2>
+                <ul>
+                    <li>Mundo aberto e realista com ambientes detalhados.</li>
+                    <li>História complexa e envolvente com múltiplos protagonistas.</li>
+                    <li>Diversidade de atividades, missões e exploração.</li>
+                    <li>Ambiente vivo e interativo com NPCs e tráfego realistas.</li>
+                    <li>Personalização de veículos, roupas e propriedades.</li>
+                </ul>
+
+                <h2>Pontos Negativos:</h2>
+                <ul>
+                    <li>Conteúdo violento e polêmico não adequado para todos.</li>
+                    <li>Potencial para comportamento antissocial dentro do jogo.</li>
+                    <li>Presença de microtransações e monetização adicional.</li>
+                    <li>Exigências de hardware podem limitar o acesso.</li>
+                    <li>Atualizações limitadas para o modo história em comparação com o modo online.</li>
+                </ul>
+            </div>
+        </div>
+    </a>
+    </div>
+</body>
+
+<div class="footer">
+    <h2 style="font-size: 12px;">Fonte: ChatGPT <i class="fa-solid fa-robot" style="color: #ffffff;"></i></h2>
+    <p style="color: #fff;">Feito por:</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="text-decoration: underline #fff">
+        <p style="color: #fff;">Emanuele Dornelles | Lucas José | Jhonatan Ribeiro</p>
+    </a>
+</div>
+
+</html>
