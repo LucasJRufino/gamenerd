@@ -43,6 +43,7 @@ header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-justify: auto;
     height: 1500px;
+    width: 100%;
     font-size: 64px;
     background-repeat: no-repeat;
     background-size: cover;
