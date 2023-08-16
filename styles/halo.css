@@ -67,8 +67,8 @@ header {
 }
 
 .flip-card {
-    width: 350px;
-    height: 420px;
+    width: 18.2vw;
+    height: 21.8vw;
     perspective: 1000px;
     border-radius: 20px;
     position: absolute;
