@@ -435,20 +435,19 @@
 
 
     <!----------------------------------------------------------Inicio do footer--------------------------------------------------------->
-    <div class="footer">
-        <p style="color: #fff;">Feito por:</p>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="text-decoration: underline #fff">
-            <p style="color: #fff;">Emanuele Dornelles | Lucas José | Jhonatan Ribeiro</p>
-        </a>
-        <div class="share-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30px" height="30px" fill="currentColor"
+    <div class="footer" style="height: fit-content; display: flex; width: 100%;">
+      <div class="share" style="position: relative; width: fit-content; height: fit-content; margin: 0%; padding: 0%;">
+        <div class="share-btn" style="display: flex; margin-left: 31%; margin-top: 30%; height: 26%; width: 26%;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45px" height="45px" fill="currentColor"
               class="w-6 h-6">
               <path fill-rule="evenodd"
                 d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
                 clip-rule="evenodd" />
             </svg>
           </div>
-          <div class="up">
+    
+          <div class="up" style="margin-bottom: 4%;">
+            <a href="https://www.instagram.com/" target="_blank" style="text-decoration: underline #fff;">
             <button data-toggle1="false" class="card1">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
                 width="30px" height="30px" fill-rule="nonzero" class="instagram">
@@ -463,6 +462,8 @@
                 </g>
               </svg>
             </button>
+        </a>
+            <a href="https://twitter.com/" target="_blank" style="text-decoration: underline #fff;">
             <button data-toggle2="false" class="card2">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px" class="twitter">
                 <path
@@ -470,8 +471,10 @@
                 </path>
               </svg>
             </button>
+        </a>
           </div>
           <div class="down">
+            <a href="https://github.com/" target="_blank" style="text-decoration: underline #fff;">
             <button data-toggle3="false" class="card3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px" class="github">
                 <path
@@ -479,6 +482,8 @@
                 </path>
               </svg>
             </button>
+        </a>
+            <a href="https://discord.com/" target="_blank" style="text-decoration: underline #fff;">
             <button data-toggle4="false" class="card4">
               <svg height="30px" width="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="discord">
                 <path
@@ -486,17 +491,25 @@
                 </path>
               </svg>
             </button>
+        </a>
           </div>
         </div>
+        <div style="position: relative; margin-left: 32%; justify-items: center;">
+        <p style="color: #fff; position: relative; margin-top: 25%;">Feito por:</p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style="text-decoration: underline #fff;">
+            <p style="color: #fff;">Emanuele Dornelles | Lucas José | Jhonatan Ribeiro</p>
+        </a>
+      </div>
     </div>
+      
 
     <script>
         const shareBtn = document.querySelector(".share-btn");
         const card1 = document.querySelector(".card1");
         const card2 = document.querySelector(".card2");
         const card3 = document.querySelector(".card3");
-        const card4 = document.querySelector(".card4");
-    
+        const card4 = document.querySelector(".card4"); 
+
         shareBtn.addEventListener("click", () => {
           if (card1.getAttribute("data-toggle1") === "true") {
             card1.setAttribute("data-toggle1", false);
