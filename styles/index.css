@@ -345,7 +345,7 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 5px;
     width: 50px;
     height: 50px;
     outline: none;
@@ -353,7 +353,7 @@ header {
     background: #626868;
     color: #ffffff;
     text-shadow: 0 0 10px #626868;
-    padding: 0 80px 0 20px;
+    padding: 2px -3px 0 20px;
     border-radius: 30px;
     box-shadow: 0 0 25px 0 #626868, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
     transition: all 1s;
@@ -446,10 +446,10 @@ header {
     width: 240px;
     padding: 20px;
     background-color: #626868;
-    border-radius: 4px;
+    border-radius: 10px;
     color: #ffffff;
     box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
-    margin-left: 300px;
+    margin-left: 500px;
   }
 .subscribe ::placeholder{
     color: #d4d4d4;
