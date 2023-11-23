@@ -10,6 +10,7 @@
     <title>Gamenerd</title>
 
 </head>
+
 <header style="justify-content: center; padding-top: 1%; padding-bottom: 1%;">
 
     <div class="home svg-wrapper" style="width: fit-content; margin: 0 auto; position: relative;">
@@ -18,7 +19,7 @@
           <rect class="shape" height="60" width="320"></rect>
         </svg>
         
-        <div class="text"><a href="index.html" style="text-decoration: none;">
+        <div class="text"><a href="index.php" style="text-decoration: none;">
           <h1 style="position: relative; color: #dbdbdb; margin-top: -4%;"><i class="fa-solid fa-gamepad"
                 style="color: #dbdbdb;"></i>GameNerd</h1>
       </a></div>
@@ -27,12 +28,12 @@
 
     </div>
         
-        <div class="container" style="margin-top: -4.3%;">
-          <input type="text" placeholder="Pesquisar" style="padding-left: 10px; padding-right: 0%;">
-          <div class="search"></div>
-        </div>
+        <div class="container" style="align-items: center; font-size: medium; margin-top: -4%;">
+          <a href="entrar.php" style="text-decoration: none;">
+            <h1 style="position: relative; color: #dbdbdb;">Login</h1>
+        </a>
+    
       </div>
-      
 
 
 </header>
@@ -40,7 +41,7 @@
 <body>
     <div class="background">
         <div style="display: flex;">
-            <a href="steambest.html" style="text-decoration: none;">
+            <a href="steambest.php" style="text-decoration: none;">
                 <div class="steamselect"
                     style="margin: 3.125vw; margin-top: 2.6041666666666665vw; height: 15.625vw; width: fit-content; background-image: url(images/steam-background-home.jpg); background-size: cover; border-radius: 20px; box-shadow: inset 0 0 15px #000000;">
                     <h1
@@ -49,7 +50,7 @@
                 </div>
             </a>
 
-            <a href="haloranking.html" style="text-decoration: none;">
+            <a href="haloranking.php" style="text-decoration: none;">
                 <div class="haloselect"
                     style="margin: 60px; margin-top: 50px; height: 300px; width: fit-content; background-image: url(images/halo-background.jpg); background-size: cover; border-radius: 20px; box-shadow: inset 0 0 15px #000000;">
                     <h1

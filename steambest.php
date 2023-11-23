@@ -16,7 +16,7 @@
     <header>
 
         <div class="home" style="width: fit-content; margin: 0 auto;">
-            <a href="index.html" style="text-decoration: none;">
+            <a href="index.php" style="text-decoration: none;">
                 <h1 style="margin: 0%; margin-right: 0px; color: #dbdbdb;"><i class="fa-solid fa-gamepad"
                         style="color: #dbdbdb;"></i>GameNerd</h1>
             </a>

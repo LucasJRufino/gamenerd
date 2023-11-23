@@ -1,0 +1,3 @@
+AVISO!
+O login cadastrado no banco de dados para o primeiro acesso como administrador é: Jhonatan
+A senha para cadastrada no banco de dados para o primeiro acesso como admistrador é: S&nh4dEt&s7e123
