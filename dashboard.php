@@ -44,25 +44,14 @@
                     <div class="card bg-light mb-3">
                         <div class="card-header">
                             <h4>
-                                <li class="fas fa-lock"></li> Lista de estudantes cadastrados.
+                                <li class="fas fa-lock"></li> perfil
                             </h4>
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <section class="text-right">
-                                        <span class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalInsert">
-                                            <i class="fas fa-plus-circle"></i> Cadastrar novo estudante
+                        <?php 
+                            require 'actions/showusername.php';
+                            $username = loggedInUsername();
+                            echo $username; ?>
 
-                                        </span>
-                                    </section>
-                                    <div id="tabelaEstudantes"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer text-muted text-right">
-                            Desenvolvido por Jhonatan Ribeiro
-                        </div>
                     </div>
                 </div>
             </div>
@@ -203,12 +192,6 @@
                         <div class="form_grupo">
                             <label class="form_label">Nome</label>
                             <input type="text" name="nomeM" class="form_input" id="nomeM" placeholder="Nome" required>
-                        </div>
-
-                        <div class="form_grupo">
-                            <label class="form_label">Login</label>
-                            <input type="text" name="login" class="form_input" id="login" placeholder="Nome de login"
-                                required>
                         </div>
 
                         <div class="form_grupo">

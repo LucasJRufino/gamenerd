@@ -2,13 +2,12 @@
     include "conexao.php";
     $conexao=connect();
 
-    $sql= "SELECT * FROM estudantes";
+    $sql= "SELECT * FROM usuarios";
     $result=$conexao->query($sql);
 
     $tabela="";
     while($dados=$result->fetch(PDO::FETCH_ASSOC)){
         $tabela = $tabela.'<tr>
-                                <td>'.$dados['id'].'</td>
                                 <td>'.$dados['nome'].'</td>
                                 <td>'.$dados['email'].'</td>
                                 <td>'.$dados['dataNasc'].'</td>

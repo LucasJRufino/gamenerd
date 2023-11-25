@@ -34,7 +34,7 @@ function inserirDados() {
 
 
 function inserirModerador() {
-    if ($('#nomeM').val() == "" || $('#login').val() == "" || $('#senha').val() == "") {
+    if ($('#nomeM').val() == "" || $('#senha').val() == "") {
         Swal.fire("Os campos devem ser preenchidos corretamente.");
         return false;
     }

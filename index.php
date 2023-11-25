@@ -29,8 +29,12 @@
     </div>
         
         <div class="container" style="align-items: center; font-size: medium; margin-top: -4%;">
-          <a href="entrar.php" style="text-decoration: none;">
-            <h1 style="position: relative; color: #dbdbdb;">Login</h1>
+          <a href="check.php" style="text-decoration: none;">
+      
+            <h1 style="position: relative; color: #dbdbdb;"><?php 
+                            require 'actions/showusername.php';
+                            $username = loggedInUsername();
+                            echo $username; ?></h1>
         </a>
     
       </div>
@@ -178,6 +182,6 @@
       }
     });
 
-  </script>
+
 </body>
 </html>
