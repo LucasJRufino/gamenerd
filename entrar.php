@@ -44,12 +44,12 @@
 
                 <input type="submit" value="login" class="submit">
 
-
-
             </div>
-
-        </form>
-
+            <a href="signup.php" style="text-decoration: none; e">
+            <div style="width: 50%; height: 25px;  margin: auto; text-align: center; 
+             margin-top: 5%; padding-top: 4%;border: none; background-color: #7d7d7d; color: #ffffff; vertical-align: middle;font-family: Arial, Helvetica, sans-serif; font-size: 12px;">Cadastrar</div>
+            </div>
+            </a>
     </div>
 
 

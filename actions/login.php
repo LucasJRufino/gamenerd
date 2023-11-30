@@ -13,7 +13,7 @@ if (isset($_POST["nome"]) && isset($_POST["senha"]) && $conexao != null) {
             session_start();
             $_SESSION["usuario"] = array($user["id"], $user["nome"], $user["assinante"]);
 
-            header('Location: ../dashboard.php');
+            header('Location: ../index.php');
         } else {
             header('Location: ../entrar.php');
         }

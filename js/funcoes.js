@@ -34,8 +34,7 @@ function inserirDados() {
 
 
 function inserirModerador() {
-    if ($('#nomeM').val() == "" || $('#senha').val() == "") {
-        Swal.fire("Os campos devem ser preenchidos corretamente.");
+    if ($('#nomeM').val() == "" || $('#senhaS').val() == ""|| $('#emailE').val() == "") {
         return false;
     }
 
@@ -49,8 +48,10 @@ function inserirModerador() {
                 $('#formMod')[0].reset();
                 mostrarDados();
                 Swal.fire("Sucesso!", "Registro salvo com êxito.", "success");
+                window.location.href = "../gamenerd/entrar.php";
             } else {
                 Swal.fire("Erro!", "Falha ao registrar os dados, tente novamente mais tarde ou contate o suporte", "error");
+                window.location.href = "../gamenerd/index.php";
             }
         }
     });
