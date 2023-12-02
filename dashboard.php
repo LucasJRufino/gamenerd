@@ -31,12 +31,31 @@
 
     <script src="js/funcoes.js"></script>
     <script src="js/sweetalert.js"></script>
-
+    <script src="https://kit.fontawesome.com/dafa5c5d34.js" crossorigin="anonymous"></script>
+    <style>
+    #botaoSeta {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 17%;
+            height: 10%;
+            font-size: 45px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
 </head>
 
 <body class="corpo">
-    
-        <!-- Inicio Tabela -->
+<button id="botaoSeta" onclick="history.back()"><i class="fa-solid fa-caret-left">
+    <b style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">GameNerd</b>
+</i>
+</button>
+
         <div class="container">
 
             <div class="row">

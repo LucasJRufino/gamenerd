@@ -7,6 +7,7 @@
         <script src="js/sweetalert.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dafa5c5d34.js" crossorigin="anonymous"></script>
     <title>Cadastro de Usuário</title>
     <style>
         body {
@@ -54,9 +55,25 @@
         button:hover {
             background-color: #45a049;
         }
+
+        #botaoSeta {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 5%;
+            height: 10%;
+            font-size: 40px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
     </style>
 </head>
 <body>
+<button id="botaoSeta" onclick="history.back()"><i class="fa-solid fa-reply"></i></button>
     <form class="form" id="formMod">
         
         <label for="nomeM">Nome:</label>

@@ -47,12 +47,12 @@ function inserirModerador() {
             if (r == 1) {
                 $('#formMod')[0].reset();
                 mostrarDados();
-                Swal.fire("Sucesso!", "Registro salvo com êxito.", "success");
-                window.location.href = "../gamenerd/entrar.php";
+                    Swal.fire("Sucesso!", "Registro salvo com êxito.", "success");
+                
             } else {
                 Swal.fire("Erro!", "Falha ao registrar os dados, tente novamente mais tarde ou contate o suporte", "error");
-                window.location.href = "../gamenerd/index.php";
             }
+           
         }
     });
 }
