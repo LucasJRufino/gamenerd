@@ -32,7 +32,7 @@
           <a href="check.php" style="text-decoration: none;">
       
             <h1 style="position: relative; color: #dbdbdb;"><?php 
-                            require 'actions/showusername.php';
+                            require 'actions/showinfo.php';
                             $username = loggedInUsername();
                             echo $username; ?></h1>
         </a>

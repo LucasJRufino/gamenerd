@@ -1,10 +1,12 @@
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+
+<script src="js/funcoes.js"></script>
+<script src="js/sweetalert.js"></script>
+
+  <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Crude SP skills</title>
 
@@ -27,12 +29,20 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/dafa5c5d34.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/dafa5c5d34.js" crossorigin="anonymous"></script>
+  <title>Meu Perfil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #3d3d3d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-    <script src="js/funcoes.js"></script>
-    <script src="js/sweetalert.js"></script>
-    <script src="https://kit.fontawesome.com/dafa5c5d34.js" crossorigin="anonymous"></script>
-    <style>
     #botaoSeta {
             position: fixed;
             top: 20px;
@@ -47,36 +57,62 @@
             cursor: pointer;
             border-radius: 30px;
         }
-    </style>
-</head>
 
-<body class="corpo">
-<button id="botaoSeta" onclick="history.back()"><i class="fa-solid fa-caret-left">
+    h1 {
+      color: #333;
+    }
+
+    #profile {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    #logout, #subscribe {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s;
+    }
+
+    #logout:hover, #subscribe:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+<a href="index.php">
+<button id="botaoSeta"><i class="fa-solid fa-caret-left">
     <b style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">GameNerd</b>
 </i>
 </button>
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card bg-light mb-3">
-                        <div class="card-header">
-                            <h4>
-                                <li class="fas fa-lock"></li> perfil
-                            </h4>
-                        </div>
-                        <?php 
-                            require 'actions/showusername.php';
+</a>
+  <div id="profile">
+  <i class="fa-regular fa-user fa-5x"></i>
+  <h1><?php 
+                            require 'actions/showinfo.php';
                             $username = loggedInUsername();
-                            echo $username; ?>
+                            echo $username; ?></h1>
 
-                    </div>
-                </div>
-            </div>
-            <a class="btn btn-danger" href="actions/logout.php">Deslogar</a>
-
+    <p><h1 style="font-size: 27px">Email: <?php
+          $email = loggedInEmail();
+          echo $email; ?></h1></p>
+          <div style="padding: 5%">
+          <a class="btn btn-danger" href="actions/logout.php">Deslogar</a>
+          <a class="btn btn-warning" style="background-color: #ffdb0f, color: #000000"  href="actions/logout.php">Assinar</a>
+          </div>
+  </div>
 
 </body>
-
 </html>
