@@ -33,7 +33,7 @@
         justify-content: center;
         height: 100vh;
         margin: 0;
-        background-color: #3d3d3d"
+        background-color: #3d3d3d;
         }
 
         #login-container {
