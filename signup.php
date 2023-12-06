@@ -12,17 +12,22 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
             background-color: #3d3d3d;
         }
 
         form {
             background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: center;
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,17 +48,18 @@
         }
 
         button {
-            background-color: #4caf50;
+            background-color: #3498db;
             color: #fff;
             padding: 10px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            width: 100%;
+            width: 60%;
+            font-size: 16px;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #237eba;
         }
 
         #botaoSeta {
@@ -76,18 +82,16 @@
 <button id="botaoSeta" onclick="history.back()"><i class="fa-solid fa-reply"></i></button>
     <form class="form" id="formMod">
         
-        <label for="nomeM">Nome:</label>
+        <label for="nomeM">Nome</label>
         <input type="text" name="nomeM" class="form_input" id="nomeM" placeholder="Nome" required>
 
-        <label for="emailE">Email:</label>
+        <label for="emailE">Email</label>
         <input  type="email" name="emailE" class="form_input" id="emailE" placeholder="seuemail@dominio.com"required>
 
-        <label for="senhaS">Senha:</label>
+        <label for="senhaS">Senha</label>
         <input  type="password" name="senhaS" class="form_input" id="senhaS" placeholder="************"required>
 
-        <!-- Adicione outros campos conforme necessário -->
-
-        <button type="button" class="btn btn-primary" id="btnMod" onclick="inserirModerador()">Enviar</button>
+        <button type="button" class="btn btn-primary" id="btnMod" onclick="inserirModerador()">Cadastrar</button>
     </form>
 </body>
 </html>
