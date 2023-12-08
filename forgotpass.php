@@ -82,20 +82,22 @@
 
 </head>
 
+
 <body>
     
-    <form class="form" id="formSen">
-    <h1>Redefinir Senha</h1>
-        <label for="nome">Nome da conta:</label>
-        <input type="text" class="form_input" id="nome" name="nome" required>
-        <br>
-        <label for="novaSenha">Nova Senha:</label>
-        <input type="password" class="form_input" id="novaSenha" name="novaSenha" required>
-        <br>
-        <label for="confirmarSenha">Confirmar Senha:</label>
-        <input type="password" class="form_input" id="confirmarSenha" name="confirmarSenha" required>
-        <br>
-        <button type="button" class="btn btn-primary" id="btnSen" onclick="redefinirSenha()">Redefinir Senha</button>
+<button id="botaoSeta" onclick="history.back()"><i class="fa-solid fa-reply"></i></button>
+    <form class="form" id="formSenha">
+    <h1>Recuperar senha</h1>
+        <label for="nomeM">Nome</label>
+        <input type="text" name="nomeM" class="form_input" id="nomeM" placeholder="Nome" required>
+
+        <label for="emailE">Nova Senha</label>
+        <input  type="password" name="emailE" class="form_input" id="emailE" placeholder="******"required>
+
+        <label for="senhaS">Confirme a senha</label>
+        <input  type="password" name="senhaS" class="form_input" id="senhaS" placeholder="******"required>
+
+        <button type="button" class="btn btn-primary" id="btnMod" onclick="trocasenha()">Cadastrar</button>
     </form>
 </body>
 </html>

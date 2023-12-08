@@ -98,7 +98,9 @@
         <button type="button" id="signup" class="btn btn-secondary">Cadastrar</button>
         </a>
         </div>
-        <div id="forgot-password" onclick="forgotPassword()">Esqueci minha senha</div>
+        <a href="forgotpass.php">
+        <div id="forgot-password">Esqueci minha senha</div>
+        </a>
         </form>
         
     </div>

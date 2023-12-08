@@ -31,7 +31,44 @@ function inserirDados() {
     });
 }
 
+function assina() {
+    $.ajax({
+        type: "POST",
+        data: "",
+        url: "actions/assina.php",
+        success: function (r) {
+            if (r == 1) {
+                mostrarDados();
+                Swal.fire("Sucesso!", "Atualização feita com êxito.", "success");
+            } else {
+                Swal.fire("Erro!", "Falha ao atualizar os dados, tente novamente mais tarde ou contate o suporte", "error");
+            }
+        }
+    });
 
+}
+
+function trocasenha() {
+    if ($('#nomeS').val() == "" || $('#senhaS').val() == "") {
+        return false;
+    }
+
+    $.ajax({
+        type: "POST",
+        data: $("#formSenha").serialize(),
+        url: "actions/trocarsenha.php",
+
+        success: function (r) {
+            if (r == 1) {
+                mostrarDados();
+                Swal.fire("Sucesso!", "Atualização feita com êxito.", "success");
+            } else {
+                Swal.fire("Erro!", "Falha ao atualizar os dados, tente novamente mais tarde ou contate o suporte", "error");
+            }
+        }
+    });
+
+}
 
 function inserirModerador() {
     if ($('#nomeM').val() == "" || $('#senhaS').val() == ""|| $('#emailE').val() == "") {
