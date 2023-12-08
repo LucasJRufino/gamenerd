@@ -110,7 +110,7 @@
           echo $email; ?></h1></p>
           <div style="padding: 5%">
           <a class="btn btn-danger" href="actions/logout.php">Deslogar</a>
-          <a class="btn btn-warning" style="background-color: #ffdb0f, color: #000000"  onclick="assina()">Assinar</a>
+          <a class="btn btn-warning" style="background-color: #ffdb0f, color: #000000"  href="assinar.php">Assinar</a>
           </div>
   </div>
 

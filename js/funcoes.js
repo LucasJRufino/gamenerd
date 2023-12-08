@@ -40,6 +40,7 @@ function assina() {
             if (r == 1) {
                 mostrarDados();
                 Swal.fire("Sucesso!", "Atualização feita com êxito.", "success");
+                window.location.href = "index.php";
             } else {
                 Swal.fire("Erro!", "Falha ao atualizar os dados, tente novamente mais tarde ou contate o suporte", "error");
             }
@@ -62,6 +63,7 @@ function trocasenha() {
             if (r == 1) {
                 mostrarDados();
                 Swal.fire("Sucesso!", "Atualização feita com êxito.", "success");
+                window.location.href = "entrar.php";
             } else {
                 Swal.fire("Erro!", "Falha ao atualizar os dados, tente novamente mais tarde ou contate o suporte", "error");
             }
