@@ -18,7 +18,22 @@ if ($username == null){
 }
     
   }
-  
+  function loggedInAssinante() { 
+    $conexao = connect();
+
+    $sql = "SELECT assinante FROM usuarios WHERE id = :id";
+    $prep = $conexao->prepare($sql);
+
+    $prep->bindParam( ':id', $_SESSION["usuario"][0], PDO::PARAM_STR); 
+    $prep->execute();
+    $assinante = $prep->fetchColumn(); 
+if ($assinante == 1){
+    return true;
+} else {
+    return false;
+}
+    
+  }
   function loggedInEmail() { 
     $conexao = connect();   
 

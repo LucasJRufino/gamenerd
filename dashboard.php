@@ -91,7 +91,7 @@
     }
   </style>
 </head>
-<body>
+<body >
 <a href="index.php">
 <button id="botaoSeta"><i class="fa-solid fa-caret-left">
     <b style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">GameNerd</b>
@@ -108,11 +108,35 @@
     <p><h1 style="font-size: 27px">Email: <?php
           $email = loggedInEmail();
           echo $email; ?></h1></p>
+
           <div style="padding: 5%">
-          <a class="btn btn-danger" href="actions/logout.php">Deslogar</a>
-          <a class="btn btn-warning" style="background-color: #ffdb0f, color: #000000"  href="assinar.php">Assinar</a>
+          <h1 id="textassinar">Assinante</h1>
+          </div>
+<div style="display: flex; justify-content: center">
+          <a class="btn btn-danger" style="margin: 10px" href="actions/logout.php" >Deslogar</a>
+
+          <div id="assinar">
+          <a class="btn btn-warning" style="margin: 10px; background-color: #ffdb0f, color: #000000"  href="assinar.php">Assinar</a>
+          </div>
+
+          </div>
           </div>
   </div>
+<script>
+  const assinante = <?php 
+                            $assinante = loggedInAssinante();
+                            if ($assinante != 1) {
+                            echo 0;} else {
+                              echo $assinante;
+                            } ?>;
+  if (assinante == 1){ 
+    document.getElementById('assinar').style.display = "none";
+    
+  } else {
+    document.getElementById('textassinar').style.display = "none";
+  }
 
+</script>
 </body>
+
 </html>

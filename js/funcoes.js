@@ -49,6 +49,8 @@ function assina() {
 
 }
 
+
+
 function trocasenha() {
     if ($('#nomeS').val() == "" || $('#senhaS').val() == "") {
         return false;
